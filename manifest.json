@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "YoutubeMojies",
+  "version": "1.0",
+  "description": "Ajoute des emojis à la barre de lecture de YouTube.",
+  "permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
